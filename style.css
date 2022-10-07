@@ -1,0 +1,102 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #3f3b51;
+  font-family: "Roboto", sans-serif;
+}
+
+section {
+  height: 100vh;
+}
+
+/* to remove the outlined border of the hamburger icon */
+button:focus,
+.navbar-toggler:focus {
+  outline: 0;
+  box-shadow: none;
+}
+
+.menu-wrapper {
+  background-color: #008489;
+  padding: 1rem 0;
+}
+
+.menu-wrapper .navbar-brand {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #0aeded;
+  -webkit-text-stroke: #fff 1px;
+}
+
+.menu-wrapper .navbar-brand:hover {
+  color: #3f3b51;
+}
+
+.menu-wrapper .navbar-nav .nav-item {
+  /* For <li> */
+  margin: 0 0.8rem;
+}
+
+.menu-wrapper .navbar-nav .nav-link {
+  /*for <a> tags*/
+  font-size: 1rem;
+  font-weight: 400;
+  color: #fff;
+  /* display: inline-block; */
+}
+
+.menu-wrapper .dropdown-menu .dropdown-item {
+  margin-bottom: 0.8rem;
+}
+
+.menu-wrapper .dropdown-menu .dropdown-item:hover {
+  background-color: #008489;
+  color: #fff;
+}
+
+.menu-wrapper .dropdown-mega .dropdown-menu {
+  width: 100%;
+}
+
+.menu-wrapper .dropdown-mega h5 {
+  padding-bottom: 0.8rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+  margin: 0;
+}
+
+.menu-wrapper .list-group-item {
+  font-size: 1rem;
+  color: #3f3b51;
+  border: 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+  padding: 0.8rem 0;
+}
+
+.menu-wrapper .btn {
+  background-color: #0aeded;
+}
+
+footer a {
+  color: #0aeded;
+  margin: 0 0.5rem;
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: #008489;
+}
+
+@media (max-width: 992px) {
+  .menu-wrapper .navbar-brand {
+    font-size: 1.8rem;
+  }
+
+  .menu-wrapper .navbar-nav .nav-item {
+    margin: 5px 10px;
+  }
+
+  .menu-wrapper form {
+    margin: 1.8rem 0;
+  }
+}
